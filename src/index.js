@@ -1,9 +1,9 @@
 // write your createStore function here
-function createStore(candyReducer){
+function createStore(reducer){
   let state;
 
   function dispatch(action){
-    state = candyReducer(state, action)
+    state = reducer(state, action)
     render();
   }
 
